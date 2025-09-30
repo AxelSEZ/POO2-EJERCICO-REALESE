@@ -1,12 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+import java.nio.charset.StandardCharsets;
+import java.io.PrintStream;
 
-/**
- *
- * @author ritza
- */
 public class Main {
-    
+    public static void main(String[] args) throws Exception {
+        // Forzar a que System.out use UTF-8
+        System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
+
+    }
 }
