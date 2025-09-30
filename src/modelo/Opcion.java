@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package modelo;
 
-/**
- *
- * @author ritza
- */
 public class Opcion {
-    
+    private String nombre;
+    private double precio;
+
+    public Opcion(String nombre, double precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+
+    public String getNombre() { return nombre; }
+    public double getPrecio() { return precio; }
+
+    @Override
+    public String toString() {
+        return nombre + " (S/ " + precio + ")";
+    }
 }
