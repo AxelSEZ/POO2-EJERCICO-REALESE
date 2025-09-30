@@ -6,5 +6,7 @@ public class Main {
         // Forzar a que System.out use UTF-8
         System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
 
+        controlador.PedidoController controller = new controlador.PedidoController();
+        controller.iniciarPedido();
     }
 }
